@@ -1,0 +1,2 @@
+BOT_TOKEN = "5366108267:AAEJnNVBfKQSVuzjk66bbc9PgOJWBQMsDMA"
+CONNECTION_STRING = "postgresql://postgres:Yann123321AAaa@localhost:5432/fawe"
