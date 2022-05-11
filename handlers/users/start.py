@@ -11,7 +11,14 @@ from services.service import *
 @dp.message_handler(commands=['start'], state=None)
 async def start(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="😎 WEB APP", web_app=WebAppInfo(url=f"https://audit3000.ru/"))]
+        [InlineKeyboardButton(text="😎 WEB APP", web_app=WebAppInfo(url=f"https://www.twitch.tv/bratishkinoff"))]
     ])
-    await message.reply("TEST WEB APP", reply_markup=keyboard)
+    try:
+        await message.reply("TEST WEB APP", reply_markup=keyboard)
+    except:
+        await message.answer("НЕ РАБОТАЕТ")
+
+@dp.message_handler(commands=['pidr'], state=None)
+async def start(message: types.Message):
+    await message.answer("ТЫ ПИДОР")
       
