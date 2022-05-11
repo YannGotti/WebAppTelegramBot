@@ -31,5 +31,5 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 
-config.py
+*config.py
 __pycache__
