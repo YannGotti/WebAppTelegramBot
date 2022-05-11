@@ -18,7 +18,4 @@ async def start(message: types.Message):
     except:
         await message.answer("НЕ РАБОТАЕТ")
 
-@dp.message_handler(commands=['pidr'], state=None)
-async def start(message: types.Message):
-    await message.answer("ТЫ ПИДОР")
       
